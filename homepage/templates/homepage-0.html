@@ -1,0 +1,24 @@
+{% extends "base.html"%}{%load static%}
+
+{% block title %}{{page_title}}{% endblock %}
+
+{% block content %}
+<ul>
+<li>
+<h1>
+	{% if page_title %}
+	{{page_title | upper}}
+	{% else %}
+	Default Title
+	{% endif %}
+</h1>
+<h3>{{now | date:"1" }}</h3>
+<ul>
+{% for n in numbers %}
+<li>{{n}}</li>
+{% endfor %}
+</ul>
+<img src="{% static 'dogs.jpeg' %}">
+{% endblock %}
+
+
