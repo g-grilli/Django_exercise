@@ -86,8 +86,6 @@
 <body>
 
 
-{% block content %}
-
 <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
@@ -113,6 +111,7 @@
 
 
     <!--MAIN -->
+    {% block content %}{% endblock %}
     
 
     <!-- ARTICLE -->
@@ -132,6 +131,5 @@
       <h6> Gene Grilli Produtions</h6>
       </div>
     </div>
-{% endblock %}
 </body>
 </html>
