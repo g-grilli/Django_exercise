@@ -1,0 +1,216 @@
+{% extends "base.html" %} {% load staticfiles%}
+{% block content %}
+head>
+  <meta charset="utf-8" />
+  <title>{% block title %}{{page_title}}{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <style>
+      /* GENERAL */
+      .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      body {
+        font: 20px "Montserrat", sans-serif;
+        line-height: 1.8;
+        color: #f5f6f7;
+      }
+      p {
+        font-size: 16px;
+      }
+      .margin {
+        margin-bottom: 45px;
+      }
+
+      /* NAVIGATION */
+      .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px
+      }
+
+      .navbar-nav li a:hover {
+        color: #1abc9c !important;
+      }
+
+
+      /* BANNER */
+      .bg-1 {
+        background-color: #008B8B; /* Teal */
+        color : #ffffff;
+      }
+
+      /* MAIN */
+      .bg-2 {
+        background-color: #5f9ea0; /* Cadet Blue */
+        color: #ffffff;
+      }
+
+      /* ARTICLE */
+      .bg-3 {
+        background-color: #ffffff; /* White */
+        color: #555555;
+      }
+
+      /* FOOTER */
+      .bg-4 {
+        background-color: #5f9ea0; /* cadet blue */
+        color: #ffffff;
+      }
+
+      li {
+        list-style: none;
+      }
+      
+      .footer li a {
+        color: #ffffff;
+        font-size: 12px;
+      }
+      .footer li a:hover {
+        color: #7fffd4;
+        font-size: 14px;
+      }
+
+    </style>
+  
+</head>
+
+div class="container-fluid bg-3 text-center">    
+	  <h3 class="margin">Through The Years</h3><br>
+	  <div class="row">
+	    <div class="col-sm-3">
+	      <p><strong>2017</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'galveston-720744__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>2016</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'austin-1402097_1280.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image %}">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>2015</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' class="img-responsive margin" style="width:100%" alt="Image %}">
+	    </div>
+	  	<div class="col-sm-3"> 
+	      <p><strong>2014</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' class="img-responsive margin" style="width:100%" alt="Image %}">
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-sm-3">
+	      <p><strong>2013</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'galveston-720744__480.jpg' class="img-responsive margin" style="width:100%" alt="Image %}">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>2012</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'austin-1402097_1280.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>2011</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  	<div class="col-sm-3"> 
+	      <p><strong>2010</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-sm-3">
+	      <p><strong>2009</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'galveston-720744__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>2008</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'austin-1402097_1280.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>2007</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  	<div class="col-sm-3"> 
+	      <p><strong>2006</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-sm-3">
+	      <p><strong>2005</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'galveston-720744__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>2004</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'austin-1402097_1280.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>2003</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  	<div class="col-sm-3"> 
+	      <p><strong>2002</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-sm-3">
+	      <p><strong>2001</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'galveston-720744__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>2000</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'austin-1402097_1280.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>1999</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  	<div class="col-sm-3"> 
+	      <p><strong>1998</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-sm-3">
+	      <p><strong>1997</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'galveston-720744__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>1996</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'austin-1402097_1280.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>1995</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  	<div class="col-sm-3"> 
+	      <p><strong>1994</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  </div>
+	  <div class="row">
+	    <div class="col-sm-3">
+	      <p><strong>1993</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'galveston-720744__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>1992</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'austin-1402097_1280.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	    <div class="col-sm-3"> 
+	      <p><strong>1991</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  	<div class="col-sm-3"> 
+	      <p><strong>Pre 1991</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	      <img src="{% static 'alamo-678138__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+	    </div>
+	  </div>
+
+{% endblock %}
+
+
