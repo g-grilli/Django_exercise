@@ -1,7 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 
-personal content
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Great Eats Around Houston!</h3>
+  <img src="{% static 'blur-1867981__480.jpg' %}" class="img-responsive img-circle margin" style="display:inline" alt="Houston buildings">
+  <h3>Houston, Texas</h3>
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+		  <div class="row">
+		    <div class="col-sm-3">
+		      <img src="{% static 'galveston-720744__480.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+		      <p><strong>Peli Peli</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+		    <div class="col-sm-3"> 
+		      <img src="{% static 'austin-1402097_1280.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image %}">
+		      <p><strong>BRC</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		    </div>
+		  </div>
+
 
 {% endblock %}
 
