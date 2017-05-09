@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '108.61.241.147',
     'localhost',
-    'project1@grilli.tech',
+    'project1.grilli.tech',
 ]
 
 
