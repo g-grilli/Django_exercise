@@ -1,0 +1,27 @@
+{% extends "base.html" %}{% load static %}
+{% block content %}
+
+<div class="container-fluid bg-5">
+	<h3>Contact Form</h3>
+	<form action="/contact" method='POST'>
+	  {% csrf_token %}
+	  <label>First Name</label>
+	  <br>
+	  <input type="text" name="first_name" placeholder="First Name" required >
+	  <br><br>
+	  <label>Last Name</label>
+	  <br>
+	  <input type='text' name='last_name'  placeholder="Last Name" required>
+	  <br><br>
+	  <label>Email</label>
+	  <br>
+	  <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="Email" required>
+	  <br><br>
+	  <label>Question</label>
+	  <br>
+	 <textarea class="form-control" rows="10" name="question"></textarea>
+	  <br><br>
+	  <input type='submit'>
+	</form>
+</div>
+{% endblock %}

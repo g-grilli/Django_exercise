@@ -1,0 +1,14 @@
+{% extends "base.html" %}{% load static %}
+{% block content %}
+
+<h1>Hello Form</h1>
+<form action="/hello" method='POST'>
+  {% csrf_token %}
+  <label>What's your name?</label>
+  <br>
+  <input type='text' name='your_name' required>
+  <br><br>
+  <input type='submit'>
+</form>
+
+{% endblock %}
