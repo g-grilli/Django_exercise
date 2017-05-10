@@ -24,9 +24,9 @@ def contact (request):
       print(form.cleaned_data['first_name'])
       send_mail(
       	form.cleaned_data['first_name'],
-      	form.cleaned_data['question'],
+      	form.cleaned_data['email'] + "\n\n" + form.cleaned_data['question'],
       	'gene@grilli.tech',
-      	[form.cleaned_data['email']],
+      	['gene@grilli.tech'],
       	fail_silently=False,
       	)
       return http.HttpResponseRedirect('/thanks')
